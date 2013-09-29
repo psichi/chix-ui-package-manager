@@ -1,0 +1,84 @@
+/** full page background *bored* */
+#bg {
+        position:fixed; 
+        top:-50%; 
+        left:-50%; 
+        width:200%; 
+        height:200%;
+}
+#bg img {
+        position:absolute; 
+        top:0; 
+        left:0; 
+        right:0; 
+        bottom:0; 
+        margin:auto; 
+        min-width:50%;
+        min-height:50%;
+}
+#page-wrapper { position: relative; z-index: 2; 
+}
+
+/** ELEMENTS **/
+.window {  
+	top: 15em;
+    font-size:0.9em;
+    font-family:serif;
+    font-style:italic;
+    padding-top:0.9em; 
+    line-height:1.5em;
+}
+
+/** dunno what to do with it yet **/
+.badge.badge-info {
+position: absolute;
+left: 10px;
+bottom: 5px;
+}
+
+#nodesWrapper {
+	
+}
+
+#nodes {
+}
+
+/** LINKS IN WINDOWS **/
+.drag-locked { border:1px solid red; }
+.cmdLink { font-size:0.80em;}
+
+/** DRAG/DROP CLASSES **/
+.dragActive { border:2px dotted orange; }
+.dropHover { border:1px dotted red; }
+
+/** INFO WINDOW **/
+
+#list {
+top: 20em;
+left: 40%;
+width: 40em;
+position: relative;
+margin: 15px 0;
+padding: 39px 19px 14px;
+background-color: #fff;
+border: 1px solid #ddd;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+
+#list:after {
+content: "Connections";
+position: absolute;
+top: -1px;
+left: -1px;
+padding: 3px 7px;
+font-size: 12px;
+font-weight: bold;
+background-color: #f5f5f5;
+border: 1px solid #ddd;
+color: #9da0a4;
+-webkit-border-radius: 4px 0 4px 0;
+-moz-border-radius: 4px 0 4px 0;
+border-radius: 4px 0 4px 0;
+}

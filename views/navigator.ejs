@@ -1,0 +1,15 @@
+<div id="packageListNav" style="display: none">
+  <button class="btn">&lt;&lt;</button> <span>Label</span>
+</div>
+
+<div id="packageList">
+<% for(var key in packages) { %>
+<button class="btn package" type="button" data-ns="<%=key%>"><%=key%></button>
+<% } %>
+</div>
+
+<div class="nodes" style="display: none">
+
+</div>
+
+<hr />

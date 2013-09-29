@@ -1,0 +1,22 @@
+{
+  "name": "chix-ui-package-manager",
+  "description": "Chix UI Package Manager",
+  "version": "0.0.2",
+  "license": "MIT",
+  "homepage": "https://github.com/psichi/chix-ui-package-manager.git",
+  "keywords": [
+    "UI"
+  ],
+  "main": "ui",
+  "dependencies": {
+    "chix-ui-models": "git+https://github.com/psichi/chix-ui-models.git"
+  },
+  "devDependencies": {
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/psichi/chix-ui-package-manager.git"
+    }
+  ]
+}
