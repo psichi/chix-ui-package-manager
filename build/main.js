@@ -81,4 +81,9 @@ module.exports = {
 };
 
 },{}]},{},[1])
-;
+;(function(window) {
+can.view.preload('views_navigator_ejs',can.EJS(function(_CONTEXT,_VIEW) { with(_VIEW) { with (_CONTEXT) {var ___v1ew = [];___v1ew.push("<div id=\"packageListNav\" style=\"display: none\">\n  <button class=\"btn\">&lt;&lt;</button> <span>Label</span>\n</div>\n<div id=\"packageList\" class=\"well\">\n");___v1ew.push(can.view.txt(0,'div',0,this,function(){var ___v1ew = []; for(var key in packages) { ___v1ew.push("\n<button class=\"btn package\" type=\"button\" data-ns=\"");___v1ew.push(can.view.txt(1,'button','data-ns',this,function(){ return key}));___v1ew.push("\"",can.view.pending(),">");___v1ew.push(can.view.txt(1,'button',0,this,function(){ return key}));___v1ew.push("</button>\n"); } ;return ___v1ew.join('')}));
+___v1ew.push("\n</div>\n<div class=\"nodes well\" style=\"display: none\">\n</div>\n<hr />\n");; return ___v1ew.join('')}} }));
+can.view.preload('views_nodes_ejs',can.EJS(function(_CONTEXT,_VIEW) { with(_VIEW) { with (_CONTEXT) {var ___v1ew = [];___v1ew.push(can.view.txt(0,'',0,this,function(){var ___v1ew = []; for(var key in nodes) { ___v1ew.push("\n<button class=\"btn package\" type=\"button\">");___v1ew.push(can.view.txt(1,'button',0,this,function(){ return key}));___v1ew.push("</button>\n"); } ;return ___v1ew.join('')}));
+___v1ew.push("\n");; return ___v1ew.join('')}} }));
+})(this);
