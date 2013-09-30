@@ -1,14 +1,15 @@
-<div id="packageListNav" style="display: none">
-  <button class="btn">&lt;&lt;</button> <span>Label</span>
+<div id="packageListNav" class="panel-heading">
+  <button class="btn" style="display: none">&lt;&lt;</button> <span>Label</span>
 </div>
 
-<div id="packageList" class="well">
+<div class="panel-content">
+<ul id="packageList" class="fan">
 <% for(var key in packages) { %>
-<button class="btn package" type="button" data-ns="<%=key%>"><%=key%></button>
+<li data-ns="<%=key%>"><%=packages[key].description %></li>
 <% } %>
-</div>
+</ul>
 
-<div class="nodes well" style="display: none">
+<ul class="nodes fan" style="display: none"></ul>
 
 </div>
 

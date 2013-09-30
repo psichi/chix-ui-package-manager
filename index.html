@@ -5,30 +5,65 @@
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet" media="screen">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <!-- Optional theme -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
 
-<link rel="stylesheet" href="css/all.css">
-<link rel="stylesheet" href="css/main.css">
 <!--  todo underscore is loaded twice, see init.js -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/can.js/1.1.7/can.jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link href="css/stroll.css" rel="stylesheet" media="screen">
+<style>
+  body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #33342d;
+  }
+
+  #page-wrapper {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .panel-content button {
+    margin-top: 0.6em;
+    margin-left: 0.6em;
+  }
+
+  .window {
+    background-color: white;
+    box-shadow: 2px 2px 19px #444;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    -o-box-shadow: 2px 2px 19px #444;
+    -webkit-box-shadow: 2px 2px 19px #444;
+    -moz-box-shadow: 2px 2px 19px #fff;
+    -moz-border-radius:0.5em;
+  }
+
+  .window:hover {
+
+    box-shadow: 2px 2px 19px #e0e0e0;
+    -o-box-shadow: 2px 2px 19px #e0e0e0;
+    -webkit-box-shadow: 2px 2px 19px #e0e0e0;
+    -moz-box-shadow: 2px 2px 19px #e0e0e0;
+
+  }
+  .window:hover {
+    border:1px solid #123456;
+  }
+
+</style>
 
 </head>
 <body>
   <div id="page-wrapper">
 
-	<div class="row-fluid">
-
-		<div class="span12">
-        <div id="packages" class="well"></div>
-		</div>
-	</div>
+    <div id="packages" class="panel panel-default window"></div>
 
 </div>
 

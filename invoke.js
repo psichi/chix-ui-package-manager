@@ -1,5 +1,5 @@
 var MODEL = require('chix-ui-models'),
-  PackageNavigator = require('./lib/ui');
+PackageNavigator = require('./lib/ui');
 
 $.when(
   $.get('http://serve.chix.io/nodes'),
