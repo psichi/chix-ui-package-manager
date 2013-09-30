@@ -7,7 +7,7 @@
   "keywords": [
     "UI"
   ],
-  "main": "ui",
+  "main": "./build/main",
   "dependencies": {
     "chix-ui-models": "git+https://github.com/psichi/chix-ui-models.git"
   },
